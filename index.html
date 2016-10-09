@@ -1,305 +1,292 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Hitsu</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
 <style>
 body{
   background-color:#00000;
   color:#FFFFFF;
 }
 
-*	{
-	margin: 0;
-	padding: 0;
-	cursor: default;
-	text-decoration: none;
-	}
+* {
+ margin: 0;
+ padding: 0;
+ cursor: default;
+ text-decoration: none;
+ }
 
 body{background-color: #b1ac8a;}
 
-h1	{
-	font-family: georgia;
-	font-size: 18px;
-	color: #694b41;
-	text-indent: 20px;
-	letter-spacing: 3px;
-	}
+h1 {
+ font-family: georgia;
+ font-size: 18px;
+ color: #694b41;
+ text-indent: 20px;
+ letter-spacing: 3px;
+ }
 
 h1 a:link, h1 a:visited {color: #694b41;}
 
 h1 a:hover, h1 a:active {color: #1f1c25;}
 
-h2	{
-	font-family: arial;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-indent: 35px;
-	color: #694b41;
-	letter-spacing: 1px;
-	}
+h2 {
+ font-family: arial;
+ font-size: 14px;
+ text-transform: uppercase;
+ font-weight: bold;
+ text-indent: 35px;
+ color: #694b41;
+ letter-spacing: 1px;
+ }
 
 h2 a:link, h2 a:visited {
-	color: #aeacb2;
-	border-bottom: 1px dotted #aeacb2;
-	}
+ color: #aeacb2;
+ border-bottom: 1px dotted #aeacb2;
+ }
 
 h2 a:hover, h2 a:active {
-	border-bottom: 1px solid #aeacb2;
-	}
+ border-bottom: 1px solid #aeacb2;
+ }
 
-b	{
-	font-family: georgia;
-	color: #3c3644;
-	}
+b {
+ font-family: georgia;
+ color: #3c3644;
+ }
 
-i	{
-	color: #3c3644;
-	font-family: georgia;
-	}
+i {
+ color: #3c3644;
+ font-family: georgia;
+ }
 
-u	{
-	color: #3c3644;
-	border-bottom: 1px dashed #3c3644;
-	font-family: georgia;
-	}
+u {
+ color: #3c3644;
+ border-bottom: 1px dashed #3c3644;
+ font-family: georgia;
+ }
 
-big	{
-	font-family: georgia;
-	color: #3c3644;
-	font-family: georgia;
-	line-height: 100%;
-	}
+big {
+ font-family: georgia;
+ color: #3c3644;
+ font-family: georgia;
+ line-height: 100%;
+ }
 
 small, sup, sub {
-	font-family: georgia;
-	color: #aeacb2;
-	}
+ font-family: georgia;
+ color: #aeacb2;
+ }
 
-#wrap	{
-	width: 550px;
-	height: auto;
-	margin: 0 auto;
-	background-color: #d4dab8;
-	}
+#wrap {
+ width: 550px;
+ height: auto;
+ margin: 0 auto;
+ background-color: #d4dab8;
+ }
 
 #header {
-	width: 550px;
-	height: 375px;
-	background: transparent url('http://cbimg6.com/layouts/09/03/34241aa.png') top left no-repeat;
-	}
+ width: 550px;
+ height: 375px;
+ background: transparent url('http://cbimg6.com/layouts/09/03/34241aa.png') top left no-repeat;
+ }
 
 .name{
-	float: left;
-	width: 350px;
-	height: 30px;
-	overflow: hidden;
-	margin: 315px 0 0 25px;
-	padding: 5px 5px 5px 20px;
-	text-align: left;
-	font-family: georgia;
-	font-weight: bold;
-	font-size: 18px;
-	color: #1f1c25;
-	background: transparent url('http://cbimg6.com/layouts/09/03/34241ab.png') top left repeat-y;
-	display: block;
-	line-height: 30px;
-	letter-spacing: 3px;
-	}
+ float: left;
+ width: 350px;
+ height: 30px;
+ overflow: hidden;
+ margin: 315px 0 0 25px;
+ padding: 5px 5px 5px 20px;
+ text-align: left;
+ font-family: georgia;
+ font-weight: bold;
+ font-size: 18px;
+ color: #1f1c25;
+ background: transparent url('http://cbimg6.com/layouts/09/03/34241ab.png') top left repeat-y;
+ display: block;
+ line-height: 30px;
+ letter-spacing: 3px;
+ }
 
 .nav{
-	float: left;
-	width: 125px;
-	height: 275px;
-	margin: 75px 0 0 0;
-	text-align: right;
-	line-height: 21px;
-	}
+ float: left;
+ width: 125px;
+ height: 275px;
+ margin: 75px 0 0 0;
+ text-align: right;
+ line-height: 21px;
+ }
 
 .nav a:link, .nav a:visited {
-		font-family: georgia;
-		font-size: 10px;
-		color: #694b41;
-		letter-spacing: 2px;
-		background: transparent url('http://cbimg6.com/layouts/09/03/34241ac.png') top right repeat-y;
-		display: block;
-		padding: 0 15px 0 0;
-		margin: 0 0 5px 0;
-		}
+  font-family: georgia;
+  font-size: 10px;
+  color: #694b41;
+  letter-spacing: 2px;
+  background: transparent url('http://cbimg6.com/layouts/09/03/34241ac.png') top right repeat-y;
+  display: block;
+  padding: 0 15px 0 0;
+  margin: 0 0 5px 0;
+  }
 
 .nav a:hover, .nav a:active {color: #1f1c25;}
 
-#main	{
-	width: 470px;
-	height: auto;
-	padding: 20px 40px 20px 40px;
-	font-family: Tahoma;
-	font-size: 10px;
-	color: #6f6c74;
-	text-align: justify;
-	line-height: 180%;
-	}
+#main {
+ width: 470px;
+ height: auto;
+ padding: 20px 40px 20px 40px;
+ font-family: Tahoma;
+ font-size: 10px;
+ color: #6f6c74;
+ text-align: justify;
+ line-height: 180%;
+ }
 
-#main p	{margin: 0 0 10px 0;
-		}
+#main p {margin: 0 0 10px 0;
+  }
 
 #main p a:link, #main p a:visited {
-		color: #694b41;
-		text-decoration: none;
-		border-bottom: 1px dotted #b1ac8a;
-		font-family: georgia;
-		font-weight: bold;
-		}
+  color: #694b41;
+  text-decoration: none;
+  border-bottom: 1px dotted #b1ac8a;
+  font-family: georgia;
+  font-weight: bold;
+  }
 
 #main p a:hover, #main p a:active {
-				border-bottom: 1px solid #b1ac8a;
-				}
+    border-bottom: 1px solid #b1ac8a;
+    }
 
 #main p.cmnt {
-			font-weight: bold;
-			text-align: right;
-			letter-spacing: 1px;
-			}
+   font-weight: bold;
+   text-align: right;
+   letter-spacing: 1px;
+   }
 
 #main li {
-		margin: 0 0 0 10px;
-		}
+  margin: 0 0 0 10px;
+  }
 
 #main ul {
-		margin: 0 0 0 10px;
-		}
+  margin: 0 0 0 10px;
+  }
 
 #main ul.rules {
-		margin: 0;
-		list-style: none;
-		}
+  margin: 0;
+  list-style: none;
+  }
 
 #main ul.rules li {
-		margin: 0 0 10px 0;
-		}
+  margin: 0 0 10px 0;
+  }
 
 #footer {
-	width: 470px;
-	height: auto;
-	padding: 0 40px 20px 40px;
-	font-family: tahoma;
-	font-size: 10px;
-	color: #b1ac8a;
-	text-align: center;
-	letter-spacing: 1px;
-	}
+ width: 470px;
+ height: auto;
+ padding: 0 40px 20px 40px;
+ font-family: tahoma;
+ font-size: 10px;
+ color: #b1ac8a;
+ text-align: center;
+ letter-spacing: 1px;
+ }
 
-	#footer a:link, #footer a:visited {
-		font-family: tahoma;
-		font-size: 10px;
-		color: #b1ac8a;
-		border-bottom: 1px dotted #b1ac8a;
-		}
+ #footer a:link, #footer a:visited {
+  font-family: tahoma;
+  font-size: 10px;
+  color: #b1ac8a;
+  border-bottom: 1px dotted #b1ac8a;
+  }
 
-	#footer a:hover, #footer a:active {
-		color: #b1ac8a;
-		border-bottom: 1px solid #b1ac8a;
-		}
+ #footer a:hover, #footer a:active {
+  color: #b1ac8a;
+  border-bottom: 1px solid #b1ac8a;
+  }
 
 hr.break {
-	height: 1px;
-	width: 80%;
-	margin: 15px auto 15px auto;
-	color: #b1ac8a;
-	background-color: #b1ac8a;
-	border: none;
-	}
+ height: 1px;
+ width: 80%;
+ margin: 15px auto 15px auto;
+ color: #b1ac8a;
+ background-color: #b1ac8a;
+ border: none;
+ }
 
 blockquote {
-	width: 90%;
-	background: transparent url('http://cbimg6.com/layouts/09/03/34241ad.png') center repeat;
-	margin: 5px auto 5px auto;
-	}
+ width: 90%;
+ background: transparent url('http://cbimg6.com/layouts/09/03/34241ad.png') center repeat;
+ margin: 5px auto 5px auto;
+ }
 
-	span.bqh {
-		display: block;
-	
-		font-family: georgia;
-		font-size: 10px;
-		background: transparent url('http://cbimg6.com/layouts/09/03/34241ae.png') center repeat;
-		padding: 0 0 0 25px;
-		letter-spacing: 3px;
-		}
+ span.bqh {
+  display: block;
+ 
+  font-family: georgia;
+  font-size: 10px;
+  background: transparent url('http://cbimg6.com/layouts/09/03/34241ae.png') center repeat;
+  padding: 0 0 0 25px;
+  letter-spacing: 3px;
+  }
 
-	blockquote p {
-		text-align: justify;
-		padding: 5px 10px 5px 10px;
-		}
+ blockquote p {
+  text-align: justify;
+  padding: 5px 10px 5px 10px;
+  }
 
 div embed {filter: alpha(opacity=150); -moz-opacity:1.5;}
+
 div.transbox
   {
-  width:440px;
-  height:120px;
-  margin:30px 50px;
-  background-color:#d4dab8;
-  filter:alpha(opacity=100);
-  opacity:1;
-  position:relative;
-  top:-150;
-left:-20;
-  }
-div.transbox p
-  {
-  margin:30px 40px;
-  font-weight:bold;
-  color:#000000;
-  }
+	width:440px;
+	height:120px;
+	margin:30px 50px;
+	background-color:#d4dab8;
+	filter:alpha(opacity=100);
+	opacity:1;
+	position:relative;
+	top:-150;
+	left:-20;
+	}
+div.transbox p{	
+	margin:30px 40px;
+	font-weight:bold;
+	color:#000000;
+	}
 
 /* tab pane styling */
 .panes div, #main .panes div, #main .panes div div {
-
-	padding:5px 5px;
-	border:1px solid #ccc;
-	height: 450px;
-	font-size:14px;
-	background-color:	#E0DDC8;
-	width: 470px;
-}
+	 padding:5px 5px;
+	 border:1px solid #ccc;
+	 height: 450px;
+	 font-size:14px;
+	 background-color: #E0DDC8;
+	 width: 470px;
+	}
 .tabs { 
 	list-style:none; 
 	margin:0 !important; 
 	padding:0;
 	height:30px;
-}
+	}
+.panes div div.panel,.panes div p.flip{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	background:#e5eecc;
+	border:solid 0px #c3c3c3;
+	}
+.panes div div.panel{
+	height: 378px;
+	}
 </style>
 
   </head>
 <body>
-<!-- Start code -->
-<script type="text/javascript">
-var sc_project=6776257; 
-var sc_invisible=1; 
-var sc_security="4fac10e9"; 
-</script>
-<script type="text/javascript"
-src="http://www.statcounter.com/counter/counter.js"></script>
-
-<script type="text/javascript">
-//<![CDATA[
-var sc_project=6776257; 
-var sc_invisible=1; 
-var sc_security="4fac10e9"; 
-var scJsHost = (("https:" == document....protocol) ? "https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter_xhtml.js'></"+"script>");
-//]]>
-</script>
-<!-- End Code -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
-<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
-
-<style type="text/css">
-Body{hidden;background-attachment:fixed;}
-.uppermenu, #flashcontent, .profile_text, .fpix_header, #asltable td, .topad, #left_container, #buyers_ad, .fpix_asl_table, #fpix_header, #flash_close_butt, #asltable, .fpix_header, .profile_text, .logo_div {visibility:hidden;display:none;}
-</style>
 
 <script>
 $(function() {
-	$("ul.tabs").tabs("div.panes > div");
+ $("ul.tabs").tabs("div.panes > div");
 });
 </script>
 <script type="text/javascript"> 
@@ -309,21 +296,6 @@ $(".flip").click(function(){
   });
 });
 </script>
- 
-<style type="text/css"> 
-.panes div div.panel,.panes div p.flip
-{
-margin:0px;
-padding:0px;
-text-align:center;
-background:#e5eecc;
-border:solid 0px #c3c3c3;
-}
-.panes div div.panel
-{
-height: 378px;
-}
-</style>
 
 <center>
 
@@ -334,28 +306,28 @@ height: 378px;
 <div id="wrap">
 
 <div id="header">
-	<div class="name">
-	Hentai Hitsu
-	</div>
+ <div class="name">
+ Hentai Hitsu
+ </div>
 
       <div class="nav">
 <ul class="tabs">
-	<li><a href="#first">Intro</a></li>
-	<li><a href="#second">Rp Syntax</a></li>
-	<li><a href="#third">Video</a></li>
-	<li><a href="#fourth">Rp "Rules"</a></li>
-	<li><a href="#fifth">About me</a></li>
+ <li><a href="#first">Intro</a></li>
+ <li><a href="#second">Rp Syntax</a></li>
+ <li><a href="#third">Video</a></li>
+ <li><a href="#fourth">Rp "Rules"</a></li>
+ <li><a href="#fifth">About me</a></li>
 </ul>
-		</div>
-	</div>
+  </div>
+ </div>
 
-	<div id="main">
+ <div id="main">
 
 
 <div class="panes">
-	<div>
+ <div>
 <center><big><b> Welcome to my profile ^-^</b></big><br><br>
-	<p>I'm a little nifty with coding this page. It does sometimes get glitch, so refresh the page if needed. Enjoy the music and chat below.</p>
+ <p>I'm a little nifty with coding this page. It does sometimes get glitch, so refresh the page if needed. Enjoy the music and chat below.</p>
 </center>
 <h4><u>About Me</u></h4>
 <br>SO: Straight - i still talk to you if your bi or gay... just don't be hitting on me.
@@ -364,9 +336,9 @@ height: 378px;
 <br>Do I cyber or rp? sorry, you'll have to ask to find out
 <br>Do i block? of course i do, its the internet. Someone bound to annoy the shit out of me.
 <br>Grammar and spelling, fk that imagination rules over knowledge. English is an art not a science to be probe at unless you are writing professionally. and chatango is not a chat not a word processor for a novel.
-	</div>
+ </div>
 
-	<div style="font-family: georgia;font-size: 12px;">
+ <div style="font-family: georgia;font-size: 12px;">
 <h1 align="center">RP Syntax</h1>
 <pre>
 
@@ -387,9 +359,9 @@ and
 "Hellos, welcome to my profile"
 (sorry, that was very cheesy)
 </pre>
-	</div>
-	
-	
+ </div>
+ 
+ 
    <div>
 <center><button class="flip">[[ Just Be Friends Video ]]</button></center>
 <div class="panel">
@@ -433,30 +405,28 @@ I don't know what else to say
 </div>
 
 <br>
-		<hr class="break">
+  <hr class="break">
 
-		<h1><a href="#">Want to Roleplay?</a></h1>
-
-
-		<blockquote>
-			<span class="bqh">Rp / Cyber Information</span>
-			<p>Name: Hitsugaya </p>
-			<p>B-day: December 1</p>
-			<p>Age: 17</p>
-			<p>Honey is depicted as a very childish and cake-loving boy who is much older than his elementary school appearance would indicate.
+  <h1><a href="#">Want to Roleplay?</a></h1>
 
 
-<p>Honey is very fond of eating sweets, and his room is full of stuffed animals. He always carries around a plush bunny named Usa-chan (Bun-Bun in the manga) (Usa-chan is short for usagi, meaning "rabbit"). </p>
+	  <blockquote>
+	   <span class="bqh">Rp / Cyber Information</span>
+	   <p>Name: Hitsugaya </p>
+	   <p>B-day: December 1</p>
+	   <p>Age: 17</p>
+	   <p>Honey is depicted as a very childish and cake-loving boy who is much older than his elementary school appearance would indicate.
 
-<p>He used to hide his true self (with much difficulty) by being a "real man" for some time</p>
 
-<p>He is also a very strong fighter, often sending people flying with one kick. He was originally intended to have an extreme dual personality. </p>
-		</blockquote>
+	<p>Honey is very fond of eating sweets, and his room is full of stuffed animals. He always carries around a plush bunny named Usa-chan (Bun-Bun in the manga) (Usa-chan is short for usagi, meaning "rabbit"). </p>
+	<p>He used to hide his true self (with much difficulty) by being a "real man" for some time</p>
+	<p>He is also a very strong fighter, often sending people flying with one kick. He was originally intended to have an extreme dual personality. </p>
+	</blockquote>
 
 
-	<div id="footer">
-		<p>&copy; 2011</p>
-	</div>
+ <div id="footer">
+  <p>&copy; 2011</p>
+ </div>
 </div>
 
 
@@ -488,11 +458,11 @@ I don't know what else to say
 <td width="410" valign="center" align="center">
 <div>
 </td>
-</tbody></table></center>
+</tbody></table>
 <br><br>
 <a href="http://s07.flagcounter.com/more/JxI"><img src="http://s07.flagcounter.com/count/JxI/bg=B0E39A/txt=543838/border=FFFFFF/columns=6/maxflags=42/viewers=0/labels=0/pageviews=1/" alt="free counters" border="0"></a>
 <br><br>
-
+</center>
 </div>
 </body>
 </html>
